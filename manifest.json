@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Odoo CRM Data Extractor",
+  "version": "1.0",
+  "description": "Extract Contacts, Opportunities, and Activities from Odoo CRM.",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "background": {
+    "service_worker": "src/serviceWorker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "dist/public/src/popup/index.html"
+  },
+  "content_scripts": [
+  {
+    "matches": ["*://*.odoo.com/odoo/*"],
+    "js": ["src/content/contentScript.js"],
+    "run_at": "document_idle"
+  }
+]
+
+
+}
