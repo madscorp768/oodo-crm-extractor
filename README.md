@@ -4,7 +4,7 @@ A **Manifest V3 Chrome Extension** that extracts **Contacts, Opportunities, and 
 
 This project focuses on **DOM scraping in a modern SPA (Odoo OWL framework)** instead of API integration.
 
-WORKING SS : 
+#WORKING SS : 
 ![](Screenshot 2026-01-17 at 07.57.43.png)
 ---
 
